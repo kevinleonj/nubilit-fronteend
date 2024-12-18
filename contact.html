@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Get in touch with YOUR_COMPANY_NAME, your Microsoft 365 partner in Guayaquil, Ecuador.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - YOUR_COMPANY_NAME</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html">
+        <img class="logo" src="assets/images/logo.png" alt="YOUR_COMPANY_NAME Logo">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="container section-content">
+      <h2 class="section-title">GET IN TOUCH</h2>
+      <p>INSERT YOUR CONTACT DETAILS HERE: EMAIL ADDRESS, PHONE NUMBER, OR PHYSICAL ADDRESS IF AVAILABLE. ENCOURAGE VISITORS TO USE THE FORM BELOW TO REACH OUT FOR MORE INFORMATION.</p>
+
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year-contact"></span> YOUR_COMPANY_NAME. All rights reserved. | Based in Guayaquil, Ecuador</p>
+  </footer>
+  <script>
+    document.getElementById('year-contact').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

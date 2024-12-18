@@ -1,0 +1,149 @@
+/* main.css */
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+/* Basic Reset and Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  background: #fff;
+  line-height: 1.6;
+}
+
+/* Container for page content */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Header and Navigation */
+header {
+  background: #f7f7f7;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header img.logo {
+  max-height: 50px;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+nav ul li a:hover {
+  color: #0078D4; /* Microsoft blue */
+}
+
+/* Footer */
+footer {
+  background: #f7f7f7;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+footer a {
+  color: #0078D4;
+  text-decoration: none;
+}
+
+/* Basic Layout for Sections */
+section {
+  padding: 60px 0;
+}
+
+/* Hero Section (Home Page) */
+.hero {
+  background: #0078D4; /* Microsoft blue */
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+.hero a.cta-button {
+  display: inline-block;
+  background: #fff;
+  color: #0078D4;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* About, Services, Contact Sections */
+h2.section-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1em;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Contact Form */
+form.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+form.contact-form input, 
+form.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+form.contact-form button {
+  padding: 10px 20px;
+  background: #0078D4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+form.contact-form button:hover {
+  background: #005fa3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+  header .container {
+    flex-direction: column;
+  }
+}
